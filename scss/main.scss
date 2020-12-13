@@ -1,0 +1,253 @@
+@import "_vars";
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#section01 {
+    background: rgb(0,183,85);
+    background: linear-gradient(90deg, rgba(0,183,85,1) 55%, rgba(0,103,192,1) 90%);
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("../images/section01/main_area1_bg2.png") no-repeat -100% 65% , url("../images/section01/main_area1_graphic.png") no-repeat left top ;
+        background-size: 100%,350px;
+    }
+    .infoBox{
+       position: absolute;
+       top: 50%;
+       left: 15%;
+       transform: translateY(-50%);
+       font-weight: 700;
+       dt {
+           font-size: 6.4rem;
+           letter-spacing: 10px;
+           line-height: 1.2;
+       }
+       dd {
+           font-size: 3rem;
+           line-height: 1.2;
+           margin: 30px 0;
+       }
+       .btns {
+           display: block;
+           a {
+               display: inline-block;
+               padding: 15px 50px;
+               font-size: 2.6rem;
+               border: 1px solid #fff;
+               transition: 0.25s ease;
+               &:first-child {
+                   margin-right: 10px;
+                   background-color: #fff;
+                   color: $mainColor;
+               }
+               &:hover {
+                background-color: $subColor;
+                border-color: $subColor;
+                   &:first-child {
+                       background-color: $subColor;
+                       border-color: $subColor;
+                       color: #fff;
+                   }
+               }
+           }
+       }
+    }
+}
+
+#section02 {
+    .mask {
+        overflow: hidden;
+        ul {
+            li {
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                a {
+                    display: block;
+                    .bgBox {
+                        img {
+                            width: 100%;
+                            height: 100vh;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .join {
+        position: relative;
+        height: 40vh;
+        background-color: $subColor;
+        z-index: 5;
+        display: none;
+        a {
+            position: relative;
+            height: 40vh;
+            width: 100%;
+            height: 100%;
+            display: block;
+            h3 {
+                position: absolute;
+                @include center();
+                line-height: 1.4;
+                font-size: 2.6rem;
+                font-weight: 700;
+                text-align: center;
+                strong {
+                    font-size: 3.6rem;
+                }
+            }
+        }
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        i {
+            font-size: 8rem;
+            color: #fff;
+        }
+        cursor: pointer;
+        &.btnPrev {
+            left: 50px;
+        }
+        &.btnNext {
+            right: 50px;
+        }
+    }
+    .pagination {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            background-color: $subColor;
+            opacity: 0.7;
+            outline: none;
+            &.swiper-pagination-bullet-active {
+                background-color: $mainColor;
+            }
+        }
+    }
+}
+
+#section03 {
+    display: flex;
+    .storeShop{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: url("../images/section03/section03_bg.png") no-repeat;
+        background-size: cover;
+        .txtBox {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 100px 0 0 0;
+            text-align: center;
+            h3 {
+                font-size: 7rem;
+                font-weight: 700;
+                letter-spacing: 10px;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+            p {
+                line-height: 1.2;
+                margin-top: 20px;
+                font-size: 2.4rem;
+                word-break: keep-all;
+            }
+        }
+        .imgBox {
+            a {
+                display: flex;
+                justify-content: center;
+                &:focus {
+                    img {
+                        border: 1px solid #f00;
+                        outline: 1px solid #f00;
+                    }
+                }
+                img {
+                    height: 100vh;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
+#popupWarp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9999;
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        background: rgb(0,183,85);
+        background: linear-gradient(90deg, rgba(0,183,85,1) 55%, rgba(0,103,192,1) 90%);
+        z-index: 9999;
+        padding: 10px;
+        border-radius: 0 30px 0 0;
+        display: none;
+        .popupTxt {
+            color: #fff;
+            padding: 5px;
+            font-weight: 500;
+            dt {
+                font-size: 2.4rem;
+                font-weight: 700;
+            }
+            dd {
+                margin: 30px 0;
+                font-size: 1.4rem;
+                word-break: keep-all;
+                line-height: 1.4;
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+            }
+        }
+        .popupFooter {
+            text-align: right;
+            button {
+                padding: 5px 10px;
+                background-color: #fff;
+                font-weight: 700;
+                color: #000;
+                border-radius: 5px;
+                cursor: pointer;
+                &:focus {
+                    border: 1px solid #f00;
+                }
+                &.btnClose {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,1355 @@
+@import "_vars";
+
+@media all and (max-width: 1650px) {
+    #section01 {
+        .bg {
+            background: url("../images/section01/main_area1_bg2.png") no-repeat
+                    right bottom,
+                url("../images/section01/main_area1_graphic.png") no-repeat;
+            background-size: 100%, 350px;
+        }
+    }
+    #section02 {
+        .mask {
+            ul {
+                .bgBox {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // index
+}
+
+@media all and (max-width: 1470px) {
+    #section02 {
+        display: flex;
+        flex-wrap: wrap;
+        .mask {
+            height: 60vh;
+            .bgBox {
+                img {
+                    width: 100%;
+                    height: 60vh !important;
+                }
+            }
+        }
+        .join {
+            display: block;
+        }
+        button {
+            top: 30%;
+            &.btnPrev {
+                left: 10px;
+            }
+            &.btnNext {
+                right: 10px;
+            }
+        }
+        .pagination {
+            top: 45%;
+            bottom: 0;
+        }
+    }
+    #section03 {
+        .storeShop {
+            .txtBox {
+                h3 {
+                    font-size: 5rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1400px) {
+    #section01 {
+        .infoBox {
+            dt {
+                font-size: 4rem;
+            }
+            dd {
+                font-size: 2.6rem;
+            }
+            .btns {
+                a {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    #footer {
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+            .sns {
+                right: 10px;
+            }
+            .policy {
+                right: 10px;
+            }
+        }
+    }
+    #info {
+        .container {
+            width: 100%;
+            margin: 0;
+            .infoBox {
+                dt {
+                    img {
+                        width: 80%;
+                    }
+                }
+                dd {
+                    font-size: 1.8rem;
+                }
+            }
+            .txtBox {
+                padding: 0 10px;
+            }
+        }
+    }
+    // info
+    #outLine {
+        padding: 250px 10px;
+        table {
+            margin-left: 0;
+        }
+    }
+    // outline
+    #joinInfo {
+        padding: 0 10px;
+        .container {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    // joininfo
+    #souvenir {
+        .container {
+            width: 100%;
+            margin: 0 0 150px;
+            .nike {
+                .itemTxt {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    // souvenir
+    #note {
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+            .txt {
+                font-size: 1.6rem;
+                ol {
+                    li {
+                        margin: 10px 0;
+                        p {position: relative;
+                            padding-left: 30px;
+                            .num {
+                                position: absolute;
+                                left: 0px;
+                                display: block;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // note
+    #appGuide {
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+    // appguide
+    #appCheck {
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+    // appcheck
+    #notice {
+        .container {
+            width: 100%;
+            margin: 0 0 150px;
+        }
+    }
+    // notice 
+    #board {
+        .container {
+            width: 100%;
+            margin: 0 0 180px;
+            padding: 0 10px;
+        }
+    }
+    // board 
+    #writing {
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media all and (max-width: 1250px) {
+    #header {
+        #gnb {
+            position: relative;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+            padding-right: 0;
+            .gnbList {
+                width: 100%;
+                @include center();
+                justify-content: space-around;
+                > li {
+                    position: relative;
+                    background-color: transparent;
+                    margin: 0;
+                    .depth01 {
+                        &:after {
+                            transform: scale(1);
+                        }
+                    }
+                    .depth02 {
+                        background-color: transparent;
+                        display: block;
+                        li {
+                            a {
+                                font-size: 1.2rem;
+                                line-height: 1.4;
+                                br {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .resizeNavBtn {
+            display: block;
+        }
+    }
+    #section01 {
+        .infoBox {
+            left: 5%;
+        }
+    }
+    #outLine {
+        padding: 150px 10px;
+        background-size: 500px;
+        table {
+            width: 50%;
+            tr {
+                th {
+                    margin-right: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // outline
+    #appCheck {
+        .container {
+            .socialSns {
+                dl {
+                    dd {
+                       ul {
+                           width: 100%;
+                           justify-content: space-around;
+                       } 
+                    }
+                }
+            }
+        }
+    }
+    // appcheck
+    #board {
+        .container {
+            .tabList {
+                li {
+                    table {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // board
+}
+
+@media all and (max-width: 1050px) {
+    #section03 {
+        .storeShop {
+            .txtBox {
+                padding-top: 25%;
+            }
+            .imgBox {
+                position: absolute;
+                bottom: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                img {
+                    height: 60vh !important;
+                }
+            }
+        }
+    }
+    // index
+    #joinInfo {
+        .container {
+            .title {
+                h3 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+            }
+            > .infoTxt {
+                dl {
+                    dt {
+                        font-size: 2.4rem;
+                    }
+                    dd {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .item {
+                .img {
+                    padding-top: 70px;
+                }
+                .itemInfo {
+                    margin-left: 70px;
+                    font-size: 2rem;
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+    // joininfo
+    #souvenir {
+        .nike {
+            .item {
+                .itemInfo {
+                    dl {
+                        text-align: center;
+                    }
+                    table {
+                        font-size: 1.8rem;
+                        border-left: 1px solid #787878;
+                        border-right: 1px solid #787878;
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        padding-left: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .itemTxt {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    // souvenir 
+    #note {
+        .container {
+            .txt {
+                &.txt01 {
+                    > p {     
+                        padding-left: 30px;
+                        &:last-child {
+                            padding-left: 0;
+                            span {
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                        span {
+                            position: relative;
+                            display: block;
+                            margin: 20px 0;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 10px;
+                                left: -25px;
+                                display: block;
+                                width: 5px;
+                                height: 5px;
+                                background-color: #171717;
+                                border-radius: 100px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    #appGuide {
+        .container {
+            div {
+                &.eventCheck {
+                    ol {
+                        li {
+                            &:last-child {
+                                p {
+                                    &:after {
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        font-size: 1.6rem;
+        .container {
+            .address {
+                dl {
+                    display: block;
+                    line-height: 1.5;
+                    &.add02 {
+                        margin: 0;
+                    }
+                }
+                .copy {
+                    margin-top: 50px;
+                }
+            }
+            .sns {
+                top: 50%;
+                flex-direction: column;
+                li {
+                    &:nth-child(2) {
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and(max-width:900px) {
+    #header {
+        #logo {
+            top: 15px;
+            left: 10px;
+            a {
+                span {
+                    font-size: 1.4rem;
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    #section02 {
+        .mask {
+            height: 60vh;
+            ul {
+                li {
+                    .bgBox {
+                        img {
+                            height: 60vh !important;
+                        }
+                    }
+                }
+            }
+        }
+        .join {
+            height: 40vh;
+            a {
+                h3 {
+                    font-size: 2rem;
+                    strong {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    #section03 {
+        .storeShop {
+            .txtBox {
+                h3 {
+                    font-size: 4rem;
+                    letter-spacing: 0;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    // index
+    #outLine {
+        background-size: 350px;
+        table {
+            width: 100%;
+            &:before {
+                font-size: 2rem;
+            }
+            tr {
+                line-height: 2;
+                display: initial;
+            }
+        }
+    }
+    // outline
+    #joinInfo {
+        .container {
+            .imgBox {
+                img {
+                    width: 100%;
+                }
+            }
+            .item {
+                flex-direction: column;
+                text-align: center;
+                .img {
+                    padding-top: 0;
+                    img {
+                        width: 160px;
+                    }
+                }
+                .itemInfo {
+                    margin: 50px 0 0 0;
+                    font-size: 2rem;
+                    dl {
+                        dt {
+                            display: block;
+                        }
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    // joininfo
+    #souvenir {
+        .other {
+            justify-content: space-around;
+            li {
+                width: 40%;
+                dl {
+                    dt {
+                        font-size: 2rem;
+                    }
+                    dd {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+    // souvenir
+    #appGuide {
+        font-size: 1.4rem;
+        .container {
+            div {
+                &.txt {
+                    dl {
+                        dt {
+                            width: 70px;
+                            margin-right: 20px;
+                        }
+                        dd {
+                            word-break: keep-all;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // appguide
+    #notice {
+        a {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 0 10px;
+            table {
+                tbody {
+                    tr {                       
+                        flex-direction: column;                      
+                        &.color {
+                            .title {
+                                color: $mainColor;
+                                font-weight: 700;
+                            }
+                        }
+                        th {
+                            display: none;
+                        }
+                        td {
+                            width: 10%;
+                            &.title {
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+            .noticeList {
+                ul {
+                    li {
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // notice 
+    #board {
+        .container {
+            .tabList {
+                li {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // board
+    #writing {
+        .container {
+            .personalInfo {
+                .infoTxt {
+                    dl {
+                        flex-direction: column;
+                        dt {
+                            width: auto;
+                            font-weight: 700;
+                        }
+                        dd {
+                            margin-left: 25px;
+                        }
+                    }
+                }
+            }
+            form {
+                .userInfo {
+                    dl {
+                        flex-direction: column;
+                        line-height: 1;
+                        height: auto;
+                        border-color: #787878;
+                        border-width: 3px;
+                        &:first-child {
+                            dd {
+                                label {
+                                    input {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(3){
+                            dd {
+                                label {
+                                    span {
+                                        display: block;
+                                        margin-top: 5px;
+                                    }
+                                    input {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        dt {
+                            margin: 10px 0;
+                            width: auto;
+                        }
+                        dd {           
+                            margin: 10px 0;                
+                            label {
+                                input {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .writingBox {
+                    textarea {
+                        height: 300px;
+                    }
+                }
+                .btns {
+                    a {
+                        padding: 20px 60px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    // writing
+    #footer {
+        .container {
+            .spon {
+                flex-direction: column;
+                dl {
+                    &:nth-child(2) {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 670px) {
+    #info {
+        .container {
+            .txtBox {
+                padding: 0 10px;
+                .txt {
+                    font-size: 2rem;
+                }
+                .colorTxt {
+                    font-size: 3rem;
+                    bottom: -50px;
+                }
+            }
+        }
+    }
+    // info
+    #joinInfo {
+        .container {
+            .title {
+                h3 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+            > .infoTxt {
+                dl {
+                    dd {
+                        font-size: 1rem;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+    }
+    // joininfo
+    #appGuide {
+        .container {
+            div {
+                &.txt {
+                    dl {
+                        dt {
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // appguide
+    #appCheck {
+        .container {
+            form {
+                dl {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    // appcheck 
+    #notice {
+        .container {
+            table {
+                font-size: 1.2rem;
+                tbody {
+                    tr {
+                        .title {
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    #section01 {
+        .infoBox {
+            dt {
+                font-size: 3.4rem;
+            }
+            dd {
+                font-size: 2rem;
+            }
+        }
+    }
+    #section03 {
+        .storeShop {
+            .txtBox {
+                padding-top: 50%;
+            }
+            .imgBox {
+                img {
+                    height: 50vh !important;
+                }
+            }
+        }
+    }
+    // index
+    #souvenir {
+        .nike {
+            .item {
+                .itemInfo {
+                    table {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // souvenir 
+    #board {
+        .container {
+            .tabList {
+                li {
+                    table {
+                        tbody {
+                            tr {
+                                flex-direction: column;
+                                td {
+                                    width: auto;
+                                    &.title {
+                                        padding-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 470px) {
+    #header {
+        #logo {
+            top: 16px;
+            left: 10px;
+            a {
+                span {
+                    font-size: 1rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+        #gnb {
+            .gnbList {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                text-align: center;
+                > li {
+                    width: 50%;
+                    .depth01 {
+                        font-size: 1.6rem;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 100%;
+                            height: 5px;
+                            display: block;
+                            background-color: $mainColor;
+                        }
+                    }
+                    .depth02 {
+                        position: static;
+                        li {
+                            a {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .resizeNavBtn {
+            top: 20px;
+            right: 10px;
+            width: 30px;
+            height: 27px;
+            span {
+                width: 30px;
+                height: 3px;
+                &:nth-child(1) {
+                    top: 0px;
+                }
+                &:nth-child(2) {
+                    top: 12px;
+                }
+                &:nth-child(3) {
+                    top: 24px;
+                }
+            }
+        }
+    }
+    #section01 {
+        .bg {
+            background: url("../images/section01/main_area1_bg2.png") no-repeat
+                    bottom,
+                url("../images/section01/main_area1_graphic.png") no-repeat left
+                    top;
+            background-size: 100%, 150px;
+        }
+        .infoBox {
+            dt {
+                font-size: 2rem;
+            }
+            dd {
+                font-size: 1.4rem;
+            }
+            .btns {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    #section02 {
+        .join {
+            a {
+                h3 {
+                    font-size: 1rem;
+                    strong {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+        button {
+            i {
+                font-size: 4rem;
+            }
+        }
+        .pagination {
+            top: 55%;
+        }
+    }
+    #section03 {
+        .storeShop {
+            .txtBox {
+                h3 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    #popupWarp {
+        .popup {
+            width: 90%;
+            .popupTxt {
+                dt {
+                    line-height: 1.2;
+                    font-size: 2rem;
+                    word-break: keep-all;
+                }
+                dd {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                }
+            }
+            .popupFooter {
+                button {
+                    padding: 5px;
+                    font-size: 1.2rem;
+                    &.btnClose {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    // index
+    #info {
+        .container {
+            .infoBox {
+                dd {
+                    font-size: 1.2rem;
+                }
+            }
+            iframe {
+                height: 350px;
+            }
+            .txtBox {
+                .colorTxt {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    // info
+    #outLine {
+        padding: 100px 10px;
+        background-size: 250px;
+        table {
+            &:before {
+                font-size: 2.4rem;
+                margin-bottom: 25px;
+            }
+            font-size: 1.4rem;
+        }
+    }
+    // outline
+    #joinInfo {
+        .container {
+            .item {
+                .itemInfo {
+                    font-size: 1.6rem;
+                    p {
+                        line-height: 1.4;
+                        font-size: 1.4rem;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+    }
+    // joininfo
+    #souvenir {
+        padding: 0 10px;
+        .nike {
+            .item {
+                flex-direction: column;
+                .itemInfo {
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    padding: 10px;
+                                    &:first-child {
+                                        padding-left: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .other {
+            li {
+                dl {
+                    dt {
+                        font-size: 1.8rem;
+                    }
+                    dd {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // souvenir 
+    #note {
+        .container {
+            .txt {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    // note
+    #appGuide {
+        .container {
+            div {
+                &.txt {
+                    dl {
+                        flex-direction: column;
+                        dt {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &.eventCheck {
+                    ol {
+                        li {
+                            p {
+                                line-height: 1.4;
+                            }
+                            &:last-child {
+                                p {
+                                    &:after {
+                                        font-weight: 700;
+                                        margin-left: 0;
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                        background-color: $mainColor;
+                        border-color: $mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    // appguide 
+    #appCheck {
+        .container {
+            h2 {
+                font-size: 3rem;
+                padding: 40px 0 20px;
+            }
+            h3 {
+                color: $mainColor;
+            }
+            .socialSns {
+                dl {
+                    dt {
+                        ul {
+                            li {
+                                p {
+                                    font-size: 1.2rem;
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+                    }
+                    dd {
+                        ul {
+                            width: 80%;
+                            li {
+                                margin: 0 10px;
+                                a {
+                                    .imgBox {
+                                        img {
+                                            width: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                dl {
+                    &:last-child {
+                        dd {
+                            &:after {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    dd {
+                        label {
+                            select {
+                                width: 80px;
+                                font-size: 1rem;
+                            }
+                            span {
+                                display: block;
+                                margin-top: 10px;
+                                &.btn {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // appcheck 
+    #notice {
+        .container {
+            table {
+                font-size: 1rem;
+            }
+        }
+    }
+    // notice
+    #board {
+        .container {
+            .tabList {
+                li {
+                    table {
+                        tbody {
+                            tr {
+                                position: relative;
+                                &.color {
+                                    td {
+                                        line-height: 1.5;
+                                       &.title {
+                                           font-weight: 700;
+                                       }
+                                    }
+                                }
+                                .title {
+                                    span {
+                                        position: absolute;
+                                        right: 50px;
+                                        &.answer {
+                                            position: static;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btnTxt {
+                padding: 10px 30px;
+            }
+        }
+    }
+    // board
+    #writing {
+        .container {
+            .checkBox {
+                font-size: 1.2rem;
+            }
+            .personalInfo {
+                h2 {
+                    font-size: 3rem;
+                    padding: 30px 0 ;
+                }
+                .title {
+                    dt {
+                        margin: 20px 0 10px;
+                    }
+                }
+                .infoTxt {
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+                    dl {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            form {
+                .userInfo {
+                    dl {
+                        dt {
+                            font-size: 1.6rem;
+                        }
+                        dd {
+                            label {
+                                input {
+                                    height: 30px;
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .writingBox {
+                    textarea {
+                        font-size: 1.4rem;
+                    }
+                }
+                .btns {
+                    margin: 25px 0;
+                    a {
+                        padding: 10px 30px;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // writing
+    #footer {
+        font-size: 1rem;
+        .container {
+            .spon {
+                dl {
+                    &:nth-child(2) {
+                        margin: 20px 0;
+                    }
+                    dt {
+                        font-size: 1.2rem;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .address {
+                margin-top: 30px;
+                dl {
+                    line-height: 1.5;
+                    &.add02 {
+                        margin: 0;
+                    }
+                }
+            }
+            .policy {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
